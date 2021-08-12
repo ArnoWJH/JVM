@@ -1,1 +1,24 @@
-<mxfile host="app.diagrams.net" modified="2021-08-12T02:47:55.759Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.0.8793 Safari/537.36" version="14.7.3" etag="CSqRs-23nJHJ7siPsQI8" type="github"><diagram id="1SNcCF1kHxkMj9YLsHfO">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-08-12T03:35:05.153Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.0.8793 Safari/537.36" etag="Z8EvBnKyji4vS71KvsFE" version="14.7.3" type="github">
+  <diagram id="1SNcCF1kHxkMj9YLsHfO" name="对象的流转与分配">
+    <mxGraphModel dx="852" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WHCCUSghSUbCCYvrMhM6-1" value="对象在JVM中的分配与流转" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="130" width="750" height="210" as="geometry">
+            <mxRectangle x="30" y="130" width="180" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WHCCUSghSUbCCYvrMhM6-2" value="一般情况对象创建之后首先分配到年轻代，当年轻代容量达到一定阈值，进行垃圾回收，还在被引用的对象依然存活，&#xa;被标记年龄，默认年龄达到15时，进入老年代" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WHCCUSghSUbCCYvrMhM6-1">
+          <mxGeometry y="26" width="750" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="WHCCUSghSUbCCYvrMhM6-3" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WHCCUSghSUbCCYvrMhM6-1">
+          <mxGeometry y="90" width="750" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WHCCUSghSUbCCYvrMhM6-4" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WHCCUSghSUbCCYvrMhM6-1">
+          <mxGeometry y="140" width="750" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
